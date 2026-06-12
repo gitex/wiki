@@ -15,7 +15,7 @@ dependencies = [
     "mkdocs-autolinks-plugin>=0.5",
     "mkdocs-newsletter",
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.14"
 license = {text = "MIT"}
 
 [project.urls]

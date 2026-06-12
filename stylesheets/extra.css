@@ -1,0 +1,12 @@
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.md-content a:link {
+    text-decoration:underline;
+}
+
+.md-typeset a:hover {
+    text-decoration:underline;
+}

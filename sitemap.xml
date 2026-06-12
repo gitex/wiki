@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://gitex.github.io/wiki/index.html</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/async.html</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/tags.html</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/thundering_herd.html</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
 </urlset>

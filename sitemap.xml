@@ -5,15 +5,23 @@
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
-         <loc>https://gitex.github.io/wiki/async.html</loc>
-         <lastmod>2026-06-12</lastmod>
-    </url>
-    <url>
          <loc>https://gitex.github.io/wiki/tags.html</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
-         <loc>https://gitex.github.io/wiki/thundering_herd.html</loc>
+         <loc>https://gitex.github.io/wiki/coding/async.html</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/coding/jitter.html</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/coding/negative_cache.html</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/coding/thundering_herd.html</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
 </urlset>

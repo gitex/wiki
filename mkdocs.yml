@@ -3,8 +3,6 @@ site_name: Второй мозг
 site_description: Сайт моих заметок
 site_author: Evgeniy Dorovatovskiy
 nav:
-  # - Теги: tags.md
-  index.md
   - Разработка:
     - Асинхронность: async.md
     - Громовое стадо: thundering_herd.md

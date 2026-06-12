@@ -2,6 +2,7 @@
 site_name: Второй мозг
 site_description: Сайт моих заметок
 site_author: Evgeniy Dorovatovskiy
+site_url: https://gitex.github.io/wiki
 nav:
   - Разработка:
     - Асинхронность: async.md
@@ -67,5 +68,6 @@ theme:
 
 extra_css: [stylesheets/extra.css]
 
-repo_name: gitex/second-brain
-repo_url: https://github.com/gitex/second-brain
+repo_name: gitex/wiki
+repo_url: https://github.com/gitex/wiki
+

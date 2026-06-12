@@ -3,8 +3,11 @@ site_name: Второй мозг
 site_description: Сайт моих заметок
 site_author: Evgeniy Dorovatovskiy
 nav:
+  # - Теги: tags.md
+  index.md
   - Разработка:
     - Асинхронность: async.md
+    - Громовое стадо: thundering_herd.md
 
 plugins:
   - search
@@ -14,6 +17,8 @@ plugins:
   - minify:
       minify_html: true
   - section-index
+  - tags
+  - offline
 
 markdown_extensions:
   - abbr
@@ -24,7 +29,13 @@ markdown_extensions:
   - toc:
       permalink: ⚑
       baselevel: 2
-
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 theme:
   name: material
   features:
@@ -33,6 +44,30 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-#
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra_css: [stylesheets/extra.css]
+
 repo_name: gitex/second-brain
 repo_url: https://github.com/gitex/second-brain

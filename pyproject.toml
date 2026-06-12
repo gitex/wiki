@@ -1,9 +1,9 @@
 [project]
-name = ""
-version = ""
-description = ""
+name = "Blog"
+version = "0.0.1"
+description = "Second Brain"
 authors = [
-    {name = "Lyz", email = "eanegin@gmail.com"},
+    {name = "Evgeniy", email = "eanegin@gmail.com"},
 ]
 dependencies = [
     "mkdocs",

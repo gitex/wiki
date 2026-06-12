@@ -1,0 +1,42 @@
+---
+site_name: The Blog
+site_description: Second Brain
+site_author: Evgeniy Dorovatovskiy
+site_url: test
+nav:
+  - Введение: intro.md
+  - Разработка:
+    - Асинхронность: async.md
+
+plugins:
+  - search
+  - autolinks
+  - git-revision-date-localized:
+      type: timeago
+  - minify:
+      minify_html: true
+  - section-index
+  - mkdocs-newsletter
+
+markdown_extensions:
+  - abbr
+  - abmonition
+  - attr_list
+  - meta
+  - def_list
+  # - toc:
+  #     permalink: ⚑
+  #     baselevel: 2
+
+theme:
+  name: material
+  custom_dir: theme
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+repo_name: gitex/second-brain
+repo_url: https://github.com/gitex/second-brain

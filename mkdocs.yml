@@ -9,6 +9,9 @@ nav:
       - coding/python/index.md
       - Оптимизация: coding/python/optimization.md
       - Pytest: coding/python/pytest.md
+      - __add__ и __radd__: coding/python/__add__.md
+    - Git:
+      - Conventional Commits: coding/conventional_commits.md
 
   - Асинхронность: coding/async.md
   - Кэширование:

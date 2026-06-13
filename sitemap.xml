@@ -37,11 +37,19 @@
          <lastmod>2026-06-13</lastmod>
     </url>
     <url>
+         <loc>https://gitex.github.io/wiki/coding/python/memory.html</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
          <loc>https://gitex.github.io/wiki/coding/python/optimization.html</loc>
          <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://gitex.github.io/wiki/coding/python/pytest.html</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/coding/python/rust_library.html</loc>
          <lastmod>2026-06-13</lastmod>
     </url>
 </urlset>

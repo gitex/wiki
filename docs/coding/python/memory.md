@@ -114,6 +114,73 @@ class A:
         saved = self  # Объект оживляет сам себя
 ```
 
+### Отключение GC
+
+Если у вас много временных объектов, почти все умирают сразу через `refcount`, циклов в них нет
+(или почти нет), то GC может тратить ресурсы на поиск того, чего нет.
+
+Может быть и наоборот - у вас долгоживущие структуры, которые GC постоянно обходит. Если их много,
+а между ними еще и много ссылок, то проверять всё это становится дорого.
+
+Иногда бывает полезно уменьшить паузы на критических участках: GC достигает пороговых значений и "мир остановись, мне нужно
+проверить циклы".
+
+Иногда это может быть полезно для более точного замера производительности вашего кода (например, `timeit` отключает gc
+на время измерения)
+
+Трюки:
+- Отключение с ручным управлением сборки мусора через `gc.collect()`
+- Вместо отключения - повышение лимитов через `gc.get_threshold(100000, 100, 100)`
+
+## Отладка утечек памяти
+
+Всегда нужно помнить про GC и `tracemalloc`.
+
+```python
+import gc
+
+gc.get_stats()  # Статистика GC, где видны несобранные объекты
+gc.collect()    # Запуск GC
+gc.set_debug(gc.DEBUG_LEAK)  # Изучение недостижимых объектов
+
+import tracemalloc
+tracemalloc.start()
+```
+
+С `tracemalloc` можно поиграться через простой менеджер контекста:
+```python
+import contextlib
+
+@contextlib.contextmanager
+def snap(lines: int = 10):
+    snap = tracemalloc.take_snapshot()
+    yield
+    for stat in snap.statistics('lineno')[:lines]:
+        print(stat)
+
+with snap(5):
+    ...  # Ваш код
+```
+
+Инструменты:
+
+- [objgraph](https://objgraph.readthedocs.io/en/stable/)
+- [memory_profiler](https://pypi.org/project/memory-profiler/)
+- tracemalloc snapshots
+
+## WeakRef
+
+В некоторых ситуациях нужны ссылки, которые не увеличивают `refcount` (кэш, наблюдатели, графы):
+
+```python
+import weakref
+
+class A:
+    pass
+
+a = A()
+w = weakref.ref(a)
+```
 
 ## Ссылки
 

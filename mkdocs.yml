@@ -4,11 +4,17 @@ site_description: Сайт моих заметок
 site_author: Evgeniy Dorovatovskiy
 site_url: https://gitex.github.io/wiki/
 nav:
-  - Разработка:
-    - Асинхронность: coding/async.md
-    - Громовое стадо: coding/thundering_herd.md
-    - Негативное кэширование: coding/negative_cache.md
-    - Джиттер: coding/jitter.md
+  - Языки программирования:
+    - Python:
+      - coding/python/index.md
+      - Оптимизация: coding/python/optimization.md
+      - Pytest: coding/python/pytest.md
+
+  - Асинхронность: coding/async.md
+  - Кэширование:
+    - Громовое стадо: coding/cache/thundering_herd.md
+    - Негативное кэширование: coding/cache/negative_cache.md
+    - Джиттер: coding/cache/jitter.md
 
 plugins:
   - search
@@ -20,6 +26,7 @@ plugins:
   - section-index
   - tags
   - offline
+  - meta
 
 markdown_extensions:
   - abbr

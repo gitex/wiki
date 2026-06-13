@@ -10,6 +10,8 @@ nav:
       - Оптимизация: coding/python/optimization.md
       - Pytest: coding/python/pytest.md
       - __add__ и __radd__: coding/python/__add__.md
+      - Библиотека на Rust: coding/python/rust_library.md
+      - Освобождение памяти: coding/python/memory.md
     - Git:
       - Conventional Commits: coding/conventional_commits.md
 

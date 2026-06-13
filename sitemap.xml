@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://gitex.github.io/wiki/index.html</loc>
-         <lastmod>2026-06-12</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://gitex.github.io/wiki/tags.html</loc>
-         <lastmod>2026-06-12</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://gitex.github.io/wiki/coding/async.html</loc>
-         <lastmod>2026-06-12</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
-         <loc>https://gitex.github.io/wiki/coding/jitter.html</loc>
-         <lastmod>2026-06-12</lastmod>
+         <loc>https://gitex.github.io/wiki/coding/cache/jitter.html</loc>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
-         <loc>https://gitex.github.io/wiki/coding/negative_cache.html</loc>
-         <lastmod>2026-06-12</lastmod>
+         <loc>https://gitex.github.io/wiki/coding/cache/negative_cache.html</loc>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
-         <loc>https://gitex.github.io/wiki/coding/thundering_herd.html</loc>
-         <lastmod>2026-06-12</lastmod>
+         <loc>https://gitex.github.io/wiki/coding/cache/thundering_herd.html</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/coding/python/index.html</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/coding/python/optimization.html</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://gitex.github.io/wiki/coding/python/pytest.html</loc>
+         <lastmod>2026-06-13</lastmod>
     </url>
 </urlset>
